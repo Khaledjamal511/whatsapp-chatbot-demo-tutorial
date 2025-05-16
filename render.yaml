@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: whatsapp-chatbot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: WASSENGER_API_KEY
+        value: YOUR_WASSENGER_API_KEY
+      - key: OPENAI_API_KEY
+        value: YOUR_OPENAI_API_KEY
